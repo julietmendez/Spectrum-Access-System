@@ -7,9 +7,9 @@ set -eux
 # We expect a Common-Data volume to be mounted at $COMMON_DATA path
 
 if [[ -d "$COMMON_DATA" ]]; then
-    ln -s $COMMON_DATA/data/ned /opt/app/src/data/geo/ned
-    ln -s $COMMON_DATA/data/nlcd /opt/app/src/data/geo/nlcd
-    ln -s $COMMON_DATA/data/counties /opt/app/src/data/counties
+    ln -s $COMMON_DATA/ned /opt/app/src/data/geo/ned
+    ln -s $COMMON_DATA/nlcd /opt/app/src/data/geo/nlcd
+    ln -s $COMMON_DATA/counties /opt/app/src/data/counties
 else
     echo -e "$(tpud setaf 1)ERR: No Common-Data found at $COMMON_DATA\!"
     exit 1
