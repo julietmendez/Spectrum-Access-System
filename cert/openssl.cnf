@@ -417,6 +417,58 @@ certificatePolicies = @cps, ROLE_CBSD
 crlDistributionPoints = @crl_section
 subjectAltName = otherName:1.3.6.1.4.1.46609.1.4;UTF8:test_fcc_id_j, otherName:1.3.6.1.4.1.46609.1.5;UTF8:test_serial_number_j
 
+[ cbsd_req_device_000007_sign ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always, issuer
+basicConstraints = CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment, cRLSign
+extendedKeyUsage = clientAuth
+certificatePolicies = @cps, ROLE_CBSD
+crlDistributionPoints = @crl_section
+subjectAltName = otherName:1.3.6.1.4.1.46609.1.4;UTF8:test_fcc_id_000000, otherName:1.3.6.1.4.1.46609.1.5;UTF8:test_serial_number_000007
+ 
+ 
+[ cbsd_req_device_000008_sign ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always, issuer
+basicConstraints = CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment, cRLSign
+extendedKeyUsage = clientAuth
+certificatePolicies = @cps, ROLE_CBSD
+crlDistributionPoints = @crl_section
+subjectAltName = otherName:1.3.6.1.4.1.46609.1.4;UTF8:test_fcc_id_000000, otherName:1.3.6.1.4.1.46609.1.5;UTF8:test_serial_number_000008
+ 
+[ cbsd_req_device_000001_sign ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always, issuer
+basicConstraints = CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment, cRLSign
+extendedKeyUsage = clientAuth
+certificatePolicies = @cps, ROLE_CBSD
+crlDistributionPoints = @crl_section
+subjectAltName = otherName:1.3.6.1.4.1.46609.1.4;UTF8:test_fcc_id_000000, otherName:1.3.6.1.4.1.46609.1.5;UTF8:test_serial_number_000001
+ 
+[ cbsd_req_device_000002_sign ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always, issuer
+basicConstraints = CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment, cRLSign
+extendedKeyUsage = clientAuth
+certificatePolicies = @cps, ROLE_CBSD
+crlDistributionPoints = @crl_section
+subjectAltName = otherName:1.3.6.1.4.1.46609.1.4;UTF8:test_fcc_id_000000, otherName:1.3.6.1.4.1.46609.1.5;UTF8:test_serial_number_000002
+ 
+[ cbsd_req_device_000015_sign ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always, issuer
+basicConstraints = CA:FALSE
+keyUsage = critical, digitalSignature, keyEncipherment, cRLSign
+extendedKeyUsage = clientAuth
+certificatePolicies = @cps, ROLE_CBSD
+crlDistributionPoints = @crl_section
+subjectAltName = otherName:1.3.6.1.4.1.46609.1.4;UTF8:test_fcc_id_000000, otherName:1.3.6.1.4.1.46609.1.5;UTF8:test_serial_number_000015
+
+
 [ cbsd_req_inapplicable_sign ]
 
 subjectKeyIdentifier = hash
